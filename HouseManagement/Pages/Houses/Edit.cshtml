@@ -1,0 +1,50 @@
+﻿@page
+@model HouseManagement.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>House</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="House.ID" />
+            <div class="form-group">
+                <label asp-for="House.Name" class="control-label"></label>
+                <input asp-for="House.Name" class="form-control" />
+                <span asp-validation-for="House.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="House.Description" class="control-label"></label>
+                <input asp-for="House.Description" class="form-control" />
+                <span asp-validation-for="House.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="House.Longitude" class="control-label"></label>
+                <input asp-for="House.Longitude" class="form-control" />
+                <span asp-validation-for="House.Longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="House.Latitude" class="control-label"></label>
+                <input asp-for="House.Latitude" class="form-control" />
+                <span asp-validation-for="House.Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

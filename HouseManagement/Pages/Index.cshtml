@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="house_info">
+    <label class="id">ID</label>
+    <label class="name">NAME</label>
+    <label class="description">DESCRIPTION</label>
+</div>
+
+<div class="house_info">
+    <label class="house_id">001</label>
+    <label class="house_name">Dalarna University</label>
+    <label class="house_description">School</label>
+    <button class="bt_showHouse">Show House</button>
+</div>
+
+<div class="house_info">
+    <label class="house_id">002</label>
+    <label class="house_name">Kupolen</label>
+    <label class="house_description">Shopping center</label>
+    <button class="bt_showHouse">Show House</button>
+</div>
+
+<div class="house_info">
+    <label class="house_id">003</label>
+    <label class="house_name">Locus</label>
+    <label class="house_description">House of students</label>
+    <button class="bt_showHouse">Show House</button>
+</div>
+
+<button class="bt_add" id="bt_add">Add</button>
+

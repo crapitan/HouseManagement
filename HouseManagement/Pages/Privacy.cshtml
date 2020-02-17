@@ -1,0 +1,28 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Add a new house here!";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="container_addNew">
+    <div class="newHouse_info">
+        <label class="newHouse_header">ID:</label>
+        <input placeholder="ID" />
+    </div>
+
+    <div class="newHouse_info">
+        <label class="newHouse_header">Name:</label>
+        <input placeholder="name" />
+    </div>
+
+    <div class="newHouse_info">
+        <label class="newHouse_header">Description:</label>
+        <textarea placeholder="description"></textarea>
+    </div>
+
+    <button class="bt_add_house" id="bt_add_house">Add</button>
+</div>
+
+
+
